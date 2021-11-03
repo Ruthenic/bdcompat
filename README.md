@@ -1,5 +1,5 @@
 # bdcompat
-a client mod independent\* wrapper around BetterDiscord's api (and possibly, its external libraries).
+a client mod independent\* wrapper around BetterDiscord's api (and possibly, its external libraries).  
 \* - this requires a wrapper produced for your mod, which may not exist.
 
 #### installing
