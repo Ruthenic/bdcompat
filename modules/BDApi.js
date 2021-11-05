@@ -5,7 +5,7 @@ let _PluginAPI = initAddonAPI('plugin')
 
 let webpackUtils = window._BDCOMPATSHIT._DO_NOT_TOUCH_THIS_OR_I_WILL_TAKE_YOUR_BABIES.webpackUtils;
 let storageWrapper = window._BDCOMPATSHIT._DO_NOT_TOUCH_THIS_OR_I_WILL_TAKE_YOUR_BABIES.storageWrapper;
-let cumcord = {'modules': window._BDCOMPATSHIT._DO_NOT_TOUCH_THIS_OR_I_WILL_TAKE_YOUR_BABIES.modules}; // ehhh, I could directly provide these, but just wrapping cumcord is funnier
+let commonModules = window._BDCOMPATSHIT._DO_NOT_TOUCH_THIS_OR_I_WILL_TAKE_YOUR_BABIES.modules;
 
 //I should probably separate this into it's own file but /shrug
 //TODO: actually implement this
@@ -19,8 +19,8 @@ let settings = {
 }
 
 let BdApi = {
-	React: cumcord.modules.common.React,
-	ReactDOM: cumcord.modules.common.ReactDOM,
+	React: commonModules.React,
+	ReactDOM: commonModules.ReactDOM,
 	Plugins: _PluginAPI,
 	Themes: _ThemeAPI,
 	settings: null,
